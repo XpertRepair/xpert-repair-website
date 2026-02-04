@@ -52,9 +52,15 @@ section {
 
 /* LOGO */
 .logo img {
-    height: 80px;
+    height: 50px;
     width: auto;
     display: block;
+}
+
+@media (max-width: 768px) {
+    .logo img {
+        height: 35px;
+    }
 }
 
 /* NAV MENU (DESKTOP) */
@@ -209,6 +215,20 @@ section {
     /* вот это убирает “полосу” */
     padding: 40px 0;
     min-height: 100%;
+}
+
+
+/* HERO LOGO */
+.hero-logo {
+    max-width: 280px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero-logo {
+        max-width: 200px;
+    }
 }
 
 .hero-grid {
