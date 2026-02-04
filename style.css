@@ -3,10 +3,6 @@
    Last-version based
 ================================================== */
 
-/* =============================
-   GLOBAL STYLES
-============================= */
-
 * {
     margin: 0;
     padding: 0;
@@ -178,7 +174,7 @@ section {
 .hero {
     position: relative;
     padding: 100px 0 120px;
-    background: url("images/hero-family.png") center / cover no-repeat;
+    background: url("images/reviews/hero-family.png") center / cover no-repeat;
     color: #fff;
     overflow: hidden;
 }
@@ -1070,7 +1066,7 @@ section {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("images/hero-family.PNG") center / cover no-repeat;
+    background: url("images/reviews/hero-family.PNG") center / cover no-repeat;
     /* твое фото */
     filter: blur(10px);
     transform: scale(1.08);
@@ -1450,7 +1446,7 @@ padding: 90px 0 60px;
     content: "";
     position: absolute;
     inset: 0;
-    background: url("images/about1.jpg") center / cover no-repeat;
+    background: url("images/reviews/about1.jpg") center / cover no-repeat;
     filter: blur(6px);
     transform: scale(1.1);
     z-index: 0;
@@ -2354,7 +2350,7 @@ padding: 90px 0 60px;
     content: "";
     position: absolute;
     inset: 0;
-    background: url("images/why-tech.jpg") center / cover no-repeat;
+    background: url("images/reviews/why-tech.jpg") center / cover no-repeat;
     filter: blur(12px);
     transform: scale(1.08);
     z-index: 0;
@@ -2613,7 +2609,7 @@ section.why-lake-style::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: url("images/why-tech.jpg") center / cover no-repeat;
+    background: url("images/reviews/why-tech.jpg") center / cover no-repeat;
     filter: blur(2px);
     transform: scale(1.08);
     z-index: 0;
