@@ -52,14 +52,14 @@ section {
 
 /* LOGO */
 .logo img {
-    height: 50px;
+    height: 70px;
     width: auto;
     display: block;
 }
 
 @media (max-width: 768px) {
     .logo img {
-        height: 35px;
+        height: 50px;
     }
 }
 
@@ -179,7 +179,8 @@ section {
 
 .hero {
     position: relative;
-    padding: 100px 0 120px;
+    padding: 70px 0 70px;
+    /* было 100px 0 120px */
     background: url("images/reviews/hero-family.png") center / cover no-repeat;
     color: #fff;
     overflow: visible;
@@ -192,7 +193,11 @@ section {
 /* Мобилки/узкие экраны часто режут сильнее */
 @media (max-width: 900px) {
     .hero {
-        background-position: 50% 5%;
+        padding: 55px 0 55px;
+    }
+
+    .hero-overlay {
+        padding: 0;
     }
 }
 
@@ -210,26 +215,31 @@ section {
 
 .hero-overlay {
     position: relative;
-    /* важно: чтобы быть поверх ::before */
     background: none;
-    /* вот это убирает “полосу” */
-    padding: 40px 0;
-    min-height: 100%;
+    padding: 0;
+    min-height: auto;
+
 }
 
-/* Small logo inside HERO */
+/* Small logo inside HERO (top-left) */
 .hero-badge-logo {
     width: 140px;
     height: auto;
-    display: block;
-    margin: 0 0 16px 0;
+    position: absolute;
+    /* Позиция */
+    top: 12px;
+    /* выше / ниже */
+    left: 12px;
+    z-index: 5;
+    
 }
 
 /* Mobile */
 @media (max-width: 768px) {
     .hero-badge-logo {
         width: 110px;
-        margin: 0 auto 14px;
+        top: 10px;
+        left: 10px;
     }
 }
 
@@ -292,7 +302,7 @@ section {
 /* Right: Schedule Service card */
 .hero-form-card {
     flex: 0 0 420px;
-    margin-top: 0px;
+    margin-top: -20px;
     background: rgba(0, 0, 0, 0.55);
     backdrop-filter: blur(6px);
     border-radius: 14px;
@@ -397,7 +407,9 @@ section {
         width: 100%;
         max-width: 360px;
     }
+
 }
+
 
 /* ==================================================
    REVIEWS SECTION (HOME)
