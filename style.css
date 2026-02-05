@@ -179,7 +179,7 @@ section {
 
 .hero {
     position: relative;
-    padding: 70px 0 70px;
+    padding: 80px 0 80px;
     /* было 100px 0 120px */
     background: url("images/reviews/hero-family.png") center / cover no-repeat;
     color: #fff;
@@ -225,21 +225,17 @@ section {
 .hero-badge-logo {
     width: 140px;
     height: auto;
-    position: absolute;
-    /* Позиция */
-    top: 12px;
-    /* выше / ниже */
-    left: 12px;
+    display: block;
+    margin-bottom: 14px;
+    /* отступ от текста */
     z-index: 5;
-    
 }
 
 /* Mobile */
 @media (max-width: 768px) {
     .hero-badge-logo {
         width: 110px;
-        top: 10px;
-        left: 10px;
+        margin: 0 auto 14px;
     }
 }
 
